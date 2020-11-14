@@ -1,0 +1,60 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+.header-logo {
+  display: inline-flex;
+  flex-wrap: wrap;
+
+  text-decoration: none;
+  color: $title-black-color;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.23;
+  width: 80px;
+  margin-right: 171px;
+}
+.logo {
+  display: inline-flex;
+  text-transform: uppercase;
+  font-size: 5px;
+  line-height: 1.25;
+  letter-spacing: 0.18em;
+  &-fire {
+    fill: $secondary-text-color;
+  }
+}
+.button-menu {
+  display: inline-flex;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
+.button-cross {
+  display: inline-flex;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
+.menu-container {
+  position: fixed;
+  background-color: rgba(17, 21, 24, 0.9);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+
+  opacity: 1;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
