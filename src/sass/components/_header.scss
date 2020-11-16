@@ -16,7 +16,22 @@
   line-height: 1.23;
   width: 80px;
   margin-right: 171px;
+  &-nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    text-decoration: none;
+    color: $title-white-color;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.23;
+    width: 80px;
+    margin-right: 171px;
+  }
 }
+
 .logo {
   display: inline-flex;
   text-transform: uppercase;
@@ -25,6 +40,13 @@
   letter-spacing: 0.18em;
   &-fire {
     fill: $secondary-text-color;
+  }
+  &-nav {
+    display: inline-flex;
+    text-transform: uppercase;
+    font-size: 5px;
+    line-height: 1.25;
+    letter-spacing: 0.18em;
   }
 }
 .button-menu {
@@ -41,9 +63,13 @@
   margin: 0;
   padding: 0;
   border: none;
-  background-color: inherit;
+  background-color: initial;
+  fill: $title-white-color;
 }
 .menu-container {
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 19px;
   position: fixed;
   background-color: rgba(17, 21, 24, 0.9);
   width: 100%;
@@ -57,4 +83,49 @@
     opacity: 0;
     pointer-events: none;
   }
+}
+.site-nav {
+  list-style: none;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &-item {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: $title-white-color;
+    &-current {
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 1.8;
+      letter-spacing: 0.03em;
+      color: $secondary-text-color;
+    }
+  }
+}
+
+.button-nav {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: initial;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: $secondary-text-color;
+  border: 2px solid;
+  border-color: $secondary-text-color;
+
+  min-width: 280px;
+  min-height: 48px;
+
+  margin-bottom: 30px;
+}
+
+.div-menu {
+  display: flex;
+  align-items: center;
 }
