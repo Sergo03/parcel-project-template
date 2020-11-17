@@ -29,6 +29,9 @@
     width: 128px;
     margin-right: 237px;
   }
+  @media screen and (min-width: 1344px) {
+    margin-right: 144px;
+  }
 
   &-nav {
     display: inline-flex;
@@ -49,6 +52,9 @@
       line-height: 1.23;
       width: 128px;
       margin-right: 537px;
+    }
+    @media screen and (min-width: 1344px) {
+      display: none;
     }
   }
 }
@@ -93,6 +99,9 @@
   }
 }
 .button-menu {
+  @media screen and (min-width: 1344px) {
+    display: none;
+  }
   display: inline-flex;
 
   margin: 0;
@@ -108,28 +117,37 @@
   border: none;
   background-color: initial;
   fill: $title-white-color;
+  @media screen and (min-width: 1344px) {
+    display: none;
+  }
 }
 .menu-container {
-  padding-top: 30px;
-  padding-right: 20px;
-  padding-left: 19px;
-  position: fixed;
-  background-color: rgba(17, 21, 24, 0.9);
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  overflow-y: scroll;
+  @media screen and (max-width: 1343px) {
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-left: 19px;
+    position: fixed;
+    background-color: rgba(17, 21, 24, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
 
-  opacity: 1;
-  @media screen and (min-width: 768px) {
-    padding-top: 43px;
-    padding-right: 40px;
-    padding-left: 40px;
+    opacity: 1;
+    @media screen and (min-width: 768px) {
+      padding-top: 43px;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    &.is-hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
   }
-  &.is-hidden {
-    opacity: 0;
-    pointer-events: none;
+  @media screen and (min-width: 1344px) {
+    display: flex;
+    align-items: center;
   }
 }
 .site-nav {
@@ -139,10 +157,17 @@
     margin-right: auto;
     display: block;
   }
+
   list-style: none;
   padding-top: 50px;
   padding-bottom: 50px;
-  &-item {
+  @media screen and (min-width: 1344px) {
+    display: flex;
+    margin-right: 60px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  &-link {
     text-decoration: none;
     font-weight: 800;
     font-size: 20px;
@@ -151,6 +176,14 @@
     color: $title-white-color;
     @media screen and (min-width: 768px) and (max-width: 1343px) {
       font-size: 26px;
+    }
+    @media screen and (min-width: 1344px) {
+      color: $primary-text-color;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.21px;
+      text-transform: uppercase;
+      // margin-right: 40px;
     }
 
     &-current {
@@ -162,6 +195,12 @@
       color: $secondary-text-color;
       @media screen and (min-width: 768px) and (max-width: 1343px) {
         font-size: 26px;
+      }
+      @media screen and (min-width: 1344px) {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.21px;
+        text-transform: uppercase;
       }
     }
   }
@@ -186,6 +225,9 @@
   margin-bottom: 30px;
   @media screen and (min-width: 768px) and(max-width:1343px) {
     display: none;
+  }
+  @media screen and (min-width: 1344px) {
+    margin-bottom: 0px;
   }
   &-tablet {
     display: none;
@@ -213,4 +255,9 @@
 .div-menu {
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 1344px) {
+  .site-nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
 }
