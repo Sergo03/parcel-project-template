@@ -1,0 +1,81 @@
+.students {
+  width: 100%;
+  position: relative;
+  background-color: $title-black-color;
+  padding-top: 50px;
+  padding-bottom: 367px;
+  height: 545px;
+  &-title {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1.36;
+    letter-spacing: 0.03em;
+    color: $title-white-color;
+    @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.3;
+    }
+
+    &-text {
+      color: $secondary-text-color;
+    }
+  }
+  &-item {
+    &-number {
+      display: flex;
+      align-items: center;
+      color: $secondary-text-color;
+      margin-bottom: 5px;
+
+      //   &:not(:last-child) {
+      //     margin-bottom: 5px;
+      //   }
+      &::before {
+        margin-right: 10px;
+        display: inline-block;
+        content: '';
+        width: 20px;
+        height: 2px;
+        background: $secondary-text-color;
+      }
+    }
+  }
+  &-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    &-item {
+      // width: 200px;
+    }
+    &-item:nth-child(odd) {
+      margin-right: 40px;
+    }
+  }
+
+  &-list {
+    list-style-type: none;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.08em;
+
+    color: $title-black-color;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    @media screen and (min-width: 768px) {
+      // display: inline-flex;
+    }
+    &-container {
+      position: absolute;
+      width: 280px;
+      background-color: $title-white-color;
+      top: 205px;
+      @media screen and (min-width: 768px) {
+        width: 688px;
+        height: 303px;
+      }
+    }
+  }
+}

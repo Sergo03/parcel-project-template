@@ -3,6 +3,12 @@
   position: relative;
   &-list {
     list-style-type: none;
+    padding-left: 36px;
+    padding-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      padding-left: 0px;
+    }
   }
   &-icon {
     fill: $secondary-text-color;
@@ -13,12 +19,18 @@
   }
   &-text {
     position: absolute;
-    left: 66px;
+    left: 68px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.43;
+
+    letter-spacing: 0.08em;
   }
   &-item {
     display: flex;
     align-items: center;
-    // justify-content: center;
+
     width: 59px;
     height: 60px;
     border: 2px solid $secondary-text-color;
@@ -28,7 +40,7 @@
     &:after {
       content: '';
       position: absolute;
-      height: 15px;
+      height: 8px;
       width: 2px;
       background: $secondary-text-color;
     }
@@ -46,8 +58,14 @@
     font-size: 14px;
     line-height: 1.43;
     letter-spacing: 0.08em;
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      margin-right: 170px;
     }
   }
 }
