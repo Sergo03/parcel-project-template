@@ -21,7 +21,7 @@
     }
 
     @media screen and (min-width: 1314px) {
-      width: 413px;
+      width: 414px;
       height: 396px;
       margin-right: 20px;
 
@@ -56,7 +56,6 @@
 
     color: $title-black-color;
     padding-bottom: 30px;
-    padding-top: 30px;
 
     @media screen and (min-width: 768px) {
       font-size: 26px;
@@ -96,23 +95,18 @@
   &-subtitle::after {
     display: block;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 130px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
     content: '';
     width: 20px;
     height: 2px;
     background: $secondary-text-color;
 
-    @media screen and (min-width: 768px) and (max-width: 1313px) {
+    @media screen and (min-width: 768px) {
       margin-top: 20px;
       margin-bottom: 20px;
-      margin-left: 155px;
-    }
-    @media screen and (min-width: 1314px) {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      margin-left: 155px;
     }
   }
 
@@ -148,7 +142,11 @@
 .svg-box {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  margin-top: 30px;
+
+  @media screen and(min-width: 768px) {
+    margin-top: 40px;
+  }
 }
 
 .icon-svg:hover {
