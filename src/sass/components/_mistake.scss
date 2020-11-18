@@ -149,30 +149,30 @@
     }
   }
 }
-// .svg-mistake {
-//   position: absolute;
-//   fill: #3d3d3d;
-//   top: 171px;
-//   left: 136px;
-//   // right: 100px;
-//   // right: -100px;
-//   // top: 50px;
-// }
-// .svg-div {
-//   @media screen and (max-width: 1679px) {
-//     display: none;
-//   }
-//   @media screen and (min-width: 1680px) {
-//     display: block;
-//   }
+.svg-mistake {
+  position: absolute;
+  fill: #3d3d3d;
+  top: 171px;
+  left: 136px;
+  // right: 100px;
+  // right: -100px;
+  // top: 50px;
+}
+.svg-div {
+  @media screen and (max-width: 1343px) {
+    display: none;
+  }
+  @media screen and (min-width: 1344px) {
+    display: block;
+  }
 
-//   position: absolute;
-//   width: 500px;
-//   height: 585px;
-//   right: 0px;
-//   top: -35px;
-//   overflow: hidden;
-// }
+  position: absolute;
+  width: 500px;
+  height: 585px;
+  right: 0px;
+  top: -26px;
+  overflow: hidden;
+}
 
 //  position: absolute;
 //   width: 350px;
