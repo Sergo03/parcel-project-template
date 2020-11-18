@@ -1,15 +1,25 @@
 .features {
   padding-top: 77px;
   position: relative;
+  padding-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-left: 0px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  @media screen and (min-width: 1344px) {
+    padding-top: 100px;
+    padding-bottom: 130px;
+  }
+
   &-list {
     list-style-type: none;
     padding-left: 36px;
-    padding-bottom: 50px;
+
     @media screen and (min-width: 768px) {
       display: flex;
       padding-left: 0px;
-    }
-    @media screen and (min-width: 1344px) {
     }
   }
   &-icon {
