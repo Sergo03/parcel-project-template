@@ -87,11 +87,6 @@ img {
   }
 }
 
-.advantages-list:hover {
-  background-color: #ff6b09;
-  cursor: pointer;
-}
-
 .advantages-item {
   margin-bottom: 50px;
 }
@@ -221,15 +216,20 @@ img {
   }
 }
 
-.icon-svg:hover {
+.advantages-list:hover {
+  background-color: #ff6b09;
+  cursor: pointer;
+}
+
+.advantages-list:hover .icon-svg {
   fill: #ffffff;
 }
 
-.advantages-text:hover {
+.advantages-list:hover .advantages-subtitle {
   color: #ffffff;
 }
 
-.advantages-subtitle:hover {
+.advantages-list:hover .advantages-text {
   color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
