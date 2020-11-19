@@ -8,6 +8,7 @@
 @import './base/container';
 @import './utils/variables';
 @import './base/common';
+
 @import './components/header';
 @import './components/hero';
 @import './components/features';
@@ -16,3 +17,7 @@
 @import './components/title';
 @import './components/subtitles';
 @import './components/program';
+@import './layout/registration';
+@import './layout/contacts';
+@import './layout/footer';
+
