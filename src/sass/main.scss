@@ -1,4 +1,3 @@
-
 /*
  * Главный файл стилей.
  * Все паршалы подключаются сюда.
@@ -14,7 +13,6 @@
 @import './components/features';
 @import './components/mistake';
 @import './components/advantages';
-@import "./components/title";
-@import "./components/subtitles";
-@import "./layout/program";
-
+@import './components/title';
+@import './components/subtitles';
+@import './components/program';
