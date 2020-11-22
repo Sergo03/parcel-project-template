@@ -53,22 +53,33 @@
     padding-top: 70px;
   }
   @media screen and (min-width: 1344px) {
-    padding-top: 46px;
+    padding-top: 125px;
   }
 
   &-img-desktop {
     @media screen and (min-width: 1344px) {
-      // margin-left: 0px;
-      // padding-bottom: 100px;
-      // position: absolute;
-      // top: 200px;
-      // right: -134px;
+      // width: 680px;
+      // height: 600px;
+      // display: flex;
+      // justify-content: space-evenly;
+      // width: 660px;
+      // height: 505px;
+      // padding: 0;
+      // padding-left: 15px;
+      // margin-top: 30px;
+      // // background-image: url('../images/desktop/hero-desktopellipseback.png');
+      // background-repeat: no-repeat;
+      // background-position-y: 32px;
+      // background-position-x: 1px;
+      // background-size: contain;
+      // margin-left: 26px;
     }
   }
   &-div {
     width: 302px;
     @media screen and (min-width: 1344px) {
-      width: 572px;
+      width: 700px;
+      height: 600px;
     }
   }
 
@@ -117,7 +128,14 @@
     }
   }
   &-img {
-    padding-left: 35px;
+    @media screen and (max-width: 1343px) {
+      padding-left: 35px;
+    }
+
+    // @media screen and (min-width: 1344px) {
+    //   width: 680px;
+    //   height: 600px;
+    // }
   }
 }
 
@@ -156,3 +174,10 @@
     min-height: 70px;
   }
 }
+// .hero-img {
+//   @media screen and (min-width: 1344px) {
+//     position: absolute;
+//     top: 35%;
+//     left: 44%;
+//   }
+// }
