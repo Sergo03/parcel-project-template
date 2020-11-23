@@ -4,6 +4,7 @@
     margin: 0 auto;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 80px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -12,6 +13,7 @@
     padding-left: 40px;
     padding-right: 40px;
     display: flex;
+    padding-bottom: 100px;
   }
 }
 @media screen and (min-width: 1344px) {
@@ -20,25 +22,28 @@
     width: 1344px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-bottom: 100px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero {
-    // box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-    background-image: url('../images/hero/background-hero-mob.jpg');
+    background-image: url('../images/hero/background-hero-mob.png');
+    background-position: bottom;
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     // box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-    background-image: url('../images/hero/background-hero-tablet.jpg');
+    background-image: url('../images/hero/background-hero-tablet.png');
+    background-position: bottom;
   }
 }
 @media screen and (min-width: 1344px) {
   .hero {
     // box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-    background-image: url('../images/hero/background-hero-desktop.jpg');
+    background-image: url('../images/hero/background-hero-desktop.png');
+    background-position: bottom;
   }
 }
 
